@@ -7,6 +7,7 @@ const WeatherApp = () => {
   const [weatherData, setWeatherData] = useState(null);
 
   const API_KEY = process.env.WEATHER_API_KEY;
+  console.log(API_KEY);
 
   const fetchWeatherData = async () => {
     try {
