@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import WeatherCard from './WeatherCard';
 
-const API_KEY = process.env.WEATHER_API_KEY; // Replace with your API key
+const API_KEY = `process.env.WEATHER_API_KEY`;
 
 const WeatherApp = () => {
   const [city, setCity] = useState('');
