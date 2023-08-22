@@ -2,12 +2,11 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import WeatherCard from './WeatherCard';
 
+const API_KEY = '0476b6a5856f32b090c24198fdc2bef8';
+
 const WeatherApp = () => {
   const [city, setCity] = useState('');
   const [weatherData, setWeatherData] = useState(null);
-
-  const API_KEY = process.env.WEATHER_API_KEY;
-  console.log(API_KEY);
 
   const fetchWeatherData = async () => {
     try {
